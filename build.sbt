@@ -9,7 +9,14 @@ name := "scala-playground"
 
 version := "0.1"
 
-scalaVersion := "2.13.7"
+scalaVersion := "2.13.8"
+
+inThisBuild(
+  Seq(
+    crossScalaVersions := Seq("2.13.8"),
+    githubWorkflowPublishTargetBranches := Seq()
+  )
+)
 
 libraryDependencies ++= Seq(
   "org.scalatest" %% "scalatest" % "3.2.10" % Test,
