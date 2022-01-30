@@ -19,6 +19,6 @@ inThisBuild(
 )
 
 libraryDependencies ++= Seq(
-  "org.scalatest" %% "scalatest" % "3.2.10" % Test,
+  "org.scalatest" %% "scalatest" % "3.2.11" % Test,
   "com.typesafe.scala-logging" %% "scala-logging" % "3.9.4"
 )
