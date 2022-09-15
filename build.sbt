@@ -1,9 +1,4 @@
-inThisBuild(
-  Seq(
-    coverageFailOnMinimum := true,
-    coverageMinimumStmtTotal := 100
-  )
-)
+import sbt.Keys.startYear
 
 name := "scala-playground"
 
@@ -14,7 +9,14 @@ scalaVersion := "2.13.8"
 inThisBuild(
   Seq(
     crossScalaVersions := Seq("2.13.8"),
-    githubWorkflowPublishTargetBranches := Seq()
+    tlBaseVersion := "0.1",
+    organization := "io,dragnea",
+    organizationName := "Andrei Silviu Dragnea",
+    startYear := Some(2022),
+    githubWorkflowJavaVersions := Seq(JavaSpec.temurin("17")),
+    tlJdkRelease := Some(17),
+    coverageFailOnMinimum := true,
+    coverageMinimumStmtTotal := 100
   )
 )
 
