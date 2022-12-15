@@ -8,7 +8,7 @@ scalaVersion := "2.13.10"
 
 inThisBuild(
   Seq(
-    crossScalaVersions := Seq("2.13.8"),
+    crossScalaVersions := Seq("2.13.10"),
     tlBaseVersion := "0.1",
     organization := "io,dragnea",
     organizationName := "Andrei Silviu Dragnea",
