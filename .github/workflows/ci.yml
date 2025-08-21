@@ -41,7 +41,7 @@ jobs:
       - name: Setup Java (oracle@20)
         id: setup-java-oracle-20
         if: matrix.java == 'oracle@20'
-        uses: actions/setup-java@v4
+        uses: actions/setup-java@v5
         with:
           distribution: oracle
           java-version: 20
@@ -102,7 +102,7 @@ jobs:
       - name: Setup Java (oracle@20)
         id: setup-java-oracle-20
         if: matrix.java == 'oracle@20'
-        uses: actions/setup-java@v4
+        uses: actions/setup-java@v5
         with:
           distribution: oracle
           java-version: 20
@@ -163,7 +163,7 @@ jobs:
       - name: Setup Java (oracle@20)
         id: setup-java-oracle-20
         if: matrix.java == 'oracle@20'
-        uses: actions/setup-java@v4
+        uses: actions/setup-java@v5
         with:
           distribution: oracle
           java-version: 20
